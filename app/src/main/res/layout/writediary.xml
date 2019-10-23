@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paper"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:fontFamily="@font/b"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/mdate"
+            android:textColor="#FFF"
+            android:textSize="22dp" />
+        <!--날짜입력하기-->
+
+        <EditText
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:id="@+id/edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:textColor="#FFF"
+
+             />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="416dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/b"
+            android:text="@string/mcontent"
+            android:textColor="#FFF"
+            android:textSize="22dp" />
+
+        <EditText
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:id="@+id/edit_dairy"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/aaa"
+            android:gravity="top"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <!--일기쓰기-->
+
+    <!--저장-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--저장버튼-->
+        <Button
+            android:id="@+id/button_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="saveDate"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="finish"
+            android:text="종료" />
+    </LinearLayout>
+</LinearLayout>

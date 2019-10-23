@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/paper"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/load_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="불러오기"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/svae_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="삭제"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/memo_edit"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btn_layout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/aaa"
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:hint="메모할 내용을 입력하세요."
+        android:textColor="#FFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="DJ"
+            android:text="개발자정보/비밀번호설정" />
+
+    </LinearLayout>
+
+</RelativeLayout>

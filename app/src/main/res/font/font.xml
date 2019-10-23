@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <font
+
+        android:fontStyle="normal"
+
+        android:fontWeight="400"
+
+        android:font="@font/b" />
+
+
+
+
+    출처: http://trend21c.tistory.com/2013 [나를 찾는 아이]
+</font-family>

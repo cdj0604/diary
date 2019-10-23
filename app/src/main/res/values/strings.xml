@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">일기장</string>
+    <string name="mdate">날짜</string>
+    <string name="mcontent">일기쓰기</string>
+</resources>
