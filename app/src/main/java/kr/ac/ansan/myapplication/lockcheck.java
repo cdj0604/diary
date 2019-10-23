@@ -34,7 +34,7 @@ public class lockcheck extends AppCompatActivity {
                     FileInputStream inFs = openFileInput("lock.txt");
                     byte[] txt = new byte[inFs.available()];
                     inFs.read(txt);
-                    String str = new String(txt); //내부메모리에 저장된값을 str에 불러옴
+                    String str = new String(txt); //내부메모리에 저장된값을 str에 불러옴.
                     inFs.close();
                     str.trim();
                    // Toast.makeText(getApplicationContext(),"저장된비밀번호 ="+str,Toast.LENGTH_SHORT).show();
